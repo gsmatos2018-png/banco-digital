@@ -1,0 +1,1 @@
+package br.com.digitalbanco.dto; import jakarta.validation.constraints.*; import java.math.BigDecimal; public record TransferRequest(@NotBlank String destinationAccount,@NotNull @DecimalMin("0.01") BigDecimal amount){}
