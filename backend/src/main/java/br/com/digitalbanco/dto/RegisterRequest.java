@@ -1,0 +1,1 @@
+package br.com.digitalbanco.dto; import jakarta.validation.constraints.*; public record RegisterRequest(@NotBlank String name,@Email @NotBlank String email,@NotBlank String password,@NotBlank String cpf){}
