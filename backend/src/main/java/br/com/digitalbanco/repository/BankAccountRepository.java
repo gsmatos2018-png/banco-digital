@@ -1,0 +1,1 @@
+package br.com.digitalbanco.repository; import br.com.digitalbanco.model.BankAccount; import org.springframework.data.jpa.repository.JpaRepository; import java.util.Optional; public interface BankAccountRepository extends JpaRepository<BankAccount,Long>{Optional<BankAccount> findByCustomerId(Long id); Optional<BankAccount> findByAccountNumber(String n);}
